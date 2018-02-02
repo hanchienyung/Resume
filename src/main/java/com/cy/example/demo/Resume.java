@@ -15,52 +15,62 @@ public class Resume {
     private long id;
 
     @NotNull
-    @Size(min=2)
+    @Size(min=5)
     private String name;
 
     @NotNull
-    @Size(min=10)
+    @Size(min=5)
     private String email;
 
-    public class Education {
+    @NotNull
+    @Size(min=5)
+    private String educationBSMajor;
 
-    }
+    @NotNull
+    @Size(min=5)
+    private String educationBSSchool;
 
-    public class Experience
-    {
-        @NotNull
-        @Size(min = 2)
-        private String experience_text;
+    @NotNull
+    @Size(min=5)
+    private String educationMSMajor;
 
-        public Experience() {
-        }
+    @NotNull
+    @Size(min=5)
+    private String educationMSSchool;
 
-        public String getExperience_text() {
-            return experience_text;
-        }
+    @NotNull
+    @Size(min=5)
+    private String experienceMostRecentTitle;
 
-        public void setExperience_text(String experience_text) {
-            this.experience_text = experience_text;
-        }
-    }
+    @NotNull
+    @Size(min=5)
+    private String experienceMostRecentCompany;
 
-    public class Skills {
-        @NotNull
-        @Size(min = 2)
-        private String skills;
+    @NotNull
+    @Size(min=5)
+    private String experienceMostRecentDuties;
 
-        public Skills() {
-        }
 
-        public String getSkills() {
-            return skills;
-        }
+    @NotNull
+    @Size(min=5)
+    private String experiencePreviousTitle;
 
-        public void setSkills(String skills) {
-            this.skills = skills;
-        }
-    }
+    @NotNull
+    @Size(min=5)
+    private String experiencePreviousCompany;
 
+    @NotNull
+    @Size(min=5)
+    private String experiencePreviousDuties;
+
+
+    @NotNull
+    @Size(min=5)
+    private String skill_1;
+
+    @NotNull
+    @Size(min=5)
+    private String skill_2;
 
     public Resume() {
     }
@@ -90,27 +100,99 @@ public class Resume {
         this.email = email;
     }
 
-    public String getEducation() {
-        return education;
+    public String getEducationBSMajor() {
+        return educationBSMajor;
     }
 
-    public void setEducation(String education) {
-        this.education = education;
+    public void setEducationBSMajor(String educationBSMajor) {
+        this.educationBSMajor = educationBSMajor;
     }
 
-    public String getExperience() {
-        return experience;
+    public String getEducationBSSchool() {
+        return educationBSSchool;
     }
 
-    public void setExperience(String experience) {
-        this.experience = experience;
+    public void setEducationBSSchool(String educationBSSchool) {
+        this.educationBSSchool = educationBSSchool;
     }
 
-    public String getSkills() {
-        return skills;
+    public String getEducationMSMajor() {
+        return educationMSMajor;
     }
 
-    public void setSkills(String skills) {
-        this.skills = skills;
+    public void setEducationMSMajor(String educationMSMajor) {
+        this.educationMSMajor = educationMSMajor;
+    }
+
+    public String getEducationMSSchool() {
+        return educationMSSchool;
+    }
+
+    public void setEducationMSSchool(String educationMSSchool) {
+        this.educationMSSchool = educationMSSchool;
+    }
+
+    public String getExperienceMostRecentTitle() {
+        return experienceMostRecentTitle;
+    }
+
+    public void setExperienceMostRecentTitle(String experienceMostRecentTitle) {
+        this.experienceMostRecentTitle = experienceMostRecentTitle;
+    }
+
+    public String getExperienceMostRecentCompany() {
+        return experienceMostRecentCompany;
+    }
+
+    public void setExperienceMostRecentCompany(String experienceMostRecentCompany) {
+        this.experienceMostRecentCompany = experienceMostRecentCompany;
+    }
+
+    public String getExperienceMostRecentDuties() {
+        return experienceMostRecentDuties;
+    }
+
+    public void setExperienceMostRecentDuties(String experienceMostRecentDuties) {
+        this.experienceMostRecentDuties = experienceMostRecentDuties;
+    }
+
+    public String getExperiencePreviousTitle() {
+        return experiencePreviousTitle;
+    }
+
+    public void setExperiencePreviousTitle(String experiencePreviousTitle) {
+        this.experiencePreviousTitle = experiencePreviousTitle;
+    }
+
+    public String getExperiencePreviousCompany() {
+        return experiencePreviousCompany;
+    }
+
+    public void setExperiencePreviousCompany(String experiencePreviousCompany) {
+        this.experiencePreviousCompany = experiencePreviousCompany;
+    }
+
+    public String getExperiencePreviousDuties() {
+        return experiencePreviousDuties;
+    }
+
+    public void setExperiencePreviousDuties(String experiencePreviousDuties) {
+        this.experiencePreviousDuties = experiencePreviousDuties;
+    }
+
+    public String getSkill_1() {
+        return skill_1;
+    }
+
+    public void setSkill_1(String skill_1) {
+        this.skill_1 = skill_1;
+    }
+
+    public String getSkill_2() {
+        return skill_2;
+    }
+
+    public void setSkill_2(String skill_2) {
+        this.skill_2 = skill_2;
     }
 }
